@@ -1,0 +1,70 @@
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    padding: 20px;
+}
+.navbar {
+    color: rgb(61, 65, 65);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.left > a {
+    color: rgb(82, 88, 94);
+    font-size: 18;
+}
+.right > a {
+    color: rgb(77, 78, 82);
+}
+h2 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.whoami {
+    background-color: rgb(56, 189, 155);
+}
+.whatami {
+    background-color: rgb(65, 68, 87);
+}
+.whereami {
+    color:rgb(99, 102, 104);
+    background-color: white;
+}
+.foot {
+    background-color: rgb(45, 47, 48);
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+img {
+    max-width: 40%;
+}
+.btn {
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 90px;
+    width: 10%;
+}
+.small {
+    max-width: 90%;
+}
+.left {
+    padding-left: 150px;
+}
+.right {
+    padding-right: 120px;
+}
+.move {
+    padding-right: 30px;
+}
