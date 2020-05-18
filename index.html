@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Cat Site</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="left">
-            <a class="navbar-brand" href="#">Me</a>
-        </div>
-        <div class="right">
-            <a href="#who" class="move">WHO</a>
-            <a href="#what" class="move">WHAT</a>
-            <a href="#where" class="move">WHERE</a>
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="#">Me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#who">WHO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#what">WHAT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#where">WHERE</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
     <div class="whoami" id="who">
         <h2>Who Am I?</h2>
         <img src="images/kitty.jpg" class="rounded-circle" alt="Cat">
