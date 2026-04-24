@@ -7,7 +7,7 @@
     <link rel="icon" href="images/kitty.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin="anonymous"></script>
@@ -15,77 +15,143 @@
     <title>Cat Site</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="#who"><span class="fa fa-paw"></span> Me</a>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#who"><span class="fa fa-paw"></span> MEOW.SITE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#who">WHO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#what">WHAT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#where">WHERE</a>
-            </li>    
+            <li class="nav-item"><a class="nav-link" href="#who">Who</a></li>
+            <li class="nav-item"><a class="nav-link" href="#what">What</a></li>
+            <li class="nav-item"><a class="nav-link" href="#where">Where</a></li>
           </ul>
-        </div>  
-      </nav>
-    <div class="whoami" id="who">
-        <span class="eyebrow">Hello, human</span>
-        <h2>Who Am I?</h2>
-        <img src="images/kitty.jpg" class="rounded-circle" alt="Cat">
-        <h2 class="tagline">I'm an adventurer.</h2>
+        </div>
+    </nav>
+
+    <section class="whoami" id="who">
+        <span class="sticker sticker--star sticker--tl" aria-hidden="true">✦</span>
+        <span class="sticker sticker--squiggle sticker--tr" aria-hidden="true">~~</span>
+        <span class="sticker sticker--paw sticker--bl" aria-hidden="true">🐾</span>
+        <span class="sticker sticker--bolt sticker--br" aria-hidden="true">⚡</span>
+
+        <span class="eyebrow">Incoming transmission</span>
+        <h1 class="hero-title">
+            <span class="hero-title__line">Who</span>
+            <span class="hero-title__line hero-title__line--pink">am</span>
+            <span class="hero-title__line">I?</span>
+        </h1>
+
+        <div class="polaroid" role="img" aria-label="Cat portrait">
+            <img src="images/kitty.jpg" alt="Cat">
+            <span class="polaroid-caption">that's me ✦</span>
+        </div>
+
+        <p class="tagline">I'm an adventurer. Professional napper. Rodent consultant.</p>
+
         <a class="scroll-cue" href="#what" aria-label="Scroll to next section">
             <span class="fa fa-angle-down"></span>
         </a>
-    </div>
-    <div class="whatami container-fluid" id="what">
-        <h2>What Am I?</h2>
-        <p>I am a domestic species of small carnivorous mammal. The only domesticated species in
-            the family <i>Felidae</i> and often referred to as the <b>domestic cat</b> to distinguish
-            it from the wild (not-as-cool) members of the family. I am specifically of the <b>house cat</b> 
-            variety, as opposed to a farm cat or feral cat (gross!). I am valued by my humans for companionship 
-            and my ability to hunt vicious rodents (they call them "toys"?). In other words, 
-            I am <strong>awesome</strong>.
-        </p>
-        <a href="https://lmgtfy.com/?q=What+is+a+cat%3F" class="btn btn-lg cta">
-            <span class="fa fa-search"></span> Cat
-        </a>
-    </div>
-    <div class="whereami container-fluid" id="where">
-        <h2>Where To Find Me?</h2>
-        <div class="row">
-            <div class="col-sm-4">
-                <p>Lorem Ipsum Sometimes I like to lay around with my good friend Lambo - he doesn't talk much
-                    but he is always around when I need him the most for bath time.
-                </p>
-                <img src="images/f11.jpg" class="img-thumbnail" loading="lazy" alt="cat laying with toy lamb">
-            </div>
-            <div class="col-sm-4">
-                <p>When I'm not laying around with Lambo I spend quality time cuddling with
-                    Mousey. Sometimes my claws dig a little too deep but I think he likes it.
-                </p>
-                <img src="images/f2.jpg" class="img-thumbnail" loading="lazy" alt="cat cuddling with toy mouse">
-            </div>
-            <div class="col-sm-4">
-                <p>For nap time I like to go to my favorite spot, the basket of comfy. Every now and
-                    then Lambo and Mousey like to join me, although sometimes I need my space!
-                </p>
-                <img src="images/f3.jpg" class="img-thumbnail" loading="lazy" alt="cat sleeping with lamb and mouse toys">
-            </div>
+    </section>
+
+    <div class="meow-ticker" aria-hidden="true">
+        <div class="meow-track">
+            <span>MEOW ✦ PURR ✦ HISS ✦ NAP ✦ SNACC ✦ ZOOMIES ✦</span>
+            <span>MEOW ✦ PURR ✦ HISS ✦ NAP ✦ SNACC ✦ ZOOMIES ✦</span>
+            <span>MEOW ✦ PURR ✦ HISS ✦ NAP ✦ SNACC ✦ ZOOMIES ✦</span>
         </div>
     </div>
+
+    <section class="whatami container-fluid" id="what">
+        <span class="sticker sticker--star sticker--tr" aria-hidden="true">✦</span>
+        <span class="sticker sticker--paw sticker--bl" aria-hidden="true">🐾</span>
+
+        <h2 class="section-title">What <em>am</em> I?</h2>
+        <div class="what-card">
+            <p>I am a domestic species of small carnivorous mammal. The only domesticated species in
+                the family <i>Felidae</i> and often referred to as the <b>domestic cat</b> to distinguish
+                it from the wild (not-as-cool) members of the family. I am specifically of the <b>house cat</b>
+                variety, as opposed to a farm cat or feral cat (gross!). I am valued by my humans for companionship
+                and my ability to hunt vicious rodents (they call them "toys"?). In other words,
+                I am <strong>awesome</strong>.
+            </p>
+            <a href="https://lmgtfy.com/?q=What+is+a+cat%3F" class="btn cta">
+                <span class="fa fa-search"></span> LOOK IT UP
+            </a>
+        </div>
+    </section>
+
+    <section class="whereami container-fluid" id="where">
+        <span class="sticker sticker--bolt sticker--tl" aria-hidden="true">⚡</span>
+        <span class="sticker sticker--squiggle sticker--br" aria-hidden="true">~~</span>
+
+        <h2 class="section-title">Where to find me?</h2>
+        <div class="row where-grid">
+            <div class="col-sm-4">
+                <figure class="photo-card photo-card--pink">
+                    <img src="images/f11.jpg" loading="lazy" alt="cat laying with toy lamb">
+                    <figcaption>
+                        <span class="tag">#1 · LAMBO</span>
+                        <p>Sometimes I lay around with my good friend Lambo — he doesn't talk much
+                            but he's always around when I need him most for bath time.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4">
+                <figure class="photo-card photo-card--mint">
+                    <img src="images/f2.jpg" loading="lazy" alt="cat cuddling with toy mouse">
+                    <figcaption>
+                        <span class="tag">#2 · MOUSEY</span>
+                        <p>When I'm not laying around with Lambo I spend quality time cuddling with
+                            Mousey. Sometimes my claws dig a little too deep but I think he likes it.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4">
+                <figure class="photo-card photo-card--butter">
+                    <img src="images/f3.jpg" loading="lazy" alt="cat sleeping with lamb and mouse toys">
+                    <figcaption>
+                        <span class="tag">#3 · THE BASKET</span>
+                        <p>For nap time I go to my favorite spot, the basket of comfy. Every now and
+                            then Lambo and Mousey like to join me — although sometimes I need my space!</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <footer class="foot">
-        <div class="socials">
-            <a href="#" aria-label="GitHub"><span class="fa fa-github"></span></a>
-            <a href="#" aria-label="Email"><span class="fa fa-envelope"></span></a>
-            <a href="#" aria-label="More cats"><span class="fa fa-paw"></span></a>
+        <div class="foot__grid">
+            <p class="foot__yell">STAY FERAL<span class="sparkle">✦</span></p>
+            <div class="socials">
+                <a href="#" aria-label="GitHub"><span class="fa fa-github"></span></a>
+                <a href="#" aria-label="Email"><span class="fa fa-envelope"></span></a>
+                <a href="#" aria-label="More cats"><span class="fa fa-paw"></span></a>
+            </div>
         </div>
-        <p>Cat Website Theme Made By <a href="#">Conner Schiller</a></p>
+        <p class="foot__credit">Cat Website Theme Made By <a href="#">Conner Schiller</a></p>
     </footer>
+
+    <script>
+        (function () {
+            if (window.matchMedia('(pointer: coarse)').matches) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var lastX = -9999, lastY = -9999;
+            var minDist = 55;
+            document.addEventListener('mousemove', function (e) {
+                var dx = e.clientX - lastX, dy = e.clientY - lastY;
+                if (dx * dx + dy * dy < minDist * minDist) return;
+                lastX = e.clientX; lastY = e.clientY;
+                var paw = document.createElement('span');
+                paw.className = 'cursor-paw';
+                paw.style.left = e.pageX + 'px';
+                paw.style.top  = e.pageY + 'px';
+                paw.style.setProperty('--r', (Math.random() * 70 - 35) + 'deg');
+                paw.textContent = '🐾';
+                document.body.appendChild(paw);
+                setTimeout(function () { paw.remove(); }, 1100);
+            }, { passive: true });
+        })();
+    </script>
 </body>
 </html>
